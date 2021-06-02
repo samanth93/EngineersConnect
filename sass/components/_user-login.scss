@@ -14,10 +14,17 @@
     flex-direction: column;
     flex: 0.8;
   }
+  &__logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   &__logo {
     display: flex;
     justify-content: center;
-    font-size: 2rem;
+    height: 5rem;
+    width: 5rem;
+    fill: rebeccapurple;
   }
   &__form-heading {
     display: flex;

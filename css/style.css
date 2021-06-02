@@ -144,10 +144,16 @@ body {
     display: flex;
     flex-direction: column;
     flex: 0.8; }
+  .user-login__logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .user-login__logo {
     display: flex;
     justify-content: center;
-    font-size: 2rem; }
+    height: 5rem;
+    width: 5rem;
+    fill: rebeccapurple; }
   .user-login__form-heading {
     display: flex;
     flex-direction: column;
