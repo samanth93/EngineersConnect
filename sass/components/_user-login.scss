@@ -1,0 +1,79 @@
+.user-login {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  &__container {
+    display: flex;
+    flex: 0.333;
+    justify-content: center;
+    padding: 2rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    flex: 0.8;
+  }
+  &__logo {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+  }
+  &__form-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+  &__heading-primary {
+    color: black;
+    text-transform: uppercase;
+  }
+  &__heading-secondary {
+    color: black;
+  }
+
+  &__input-text {
+    font-family: inherit;
+    color: inherit;
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    outline: none;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    border-bottom: solid 0.25rem transparent;
+    transition: all 0.2s;
+  }
+  &__input-label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.2s;
+  }
+  &__input-text:focus {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: solid 0.25rem #28b485;
+  }
+  &__input-text:focus:invalid {
+    border-bottom: solid 0.25rem #ff7730;
+  }
+  &__input-text::-webkit-input-placeholder {
+    color: #999;
+  }
+  &__input-text:placeholder-shown + .user-login__input-label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-3rem);
+  }
+  &__btn-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
