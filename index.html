@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Engineers Connect</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <main>
@@ -38,7 +40,6 @@
                   placeholder="User Name"
                   id="user_name"
                   autocomplete="off"
-                  required
                 />
                 <label for="user_name" class="user-login__input-label"
                   >User name</label
@@ -51,7 +52,6 @@
                   placeholder="Password"
                   id="password"
                   autocomplete="off"
-                  required
                 />
                 <label for="password" class="user-login__input-label"
                   >Password</label
@@ -60,7 +60,7 @@
             </div>
             <div class="user-login__btn-container">
               <button class="btn btn--light-green">Sign-in</button>
-              <button class="btn btn--light-orange">Sign-up</button>
+              <button class="btn btn--light-orange redirect">Sign-up</button>
             </div>
           </form>
         </div>

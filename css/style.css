@@ -31,16 +31,16 @@ body {
   margin-bottom: 1.5rem !important; }
 
 .u-margin-top-huge {
-  margin-bottom: 10rem !important; }
+  margin-top: 10rem !important; }
 
 .u-margin-top-large {
-  margin-bottom: 8rem !important; }
+  margin-top: 8rem !important; }
 
 .u-margin-top-medium {
-  margin-bottom: 4rem !important; }
+  margin-top: 4rem !important; }
 
 .u-margin-top-small {
-  margin-bottom: 1.5rem !important; }
+  margin-top: 1.5rem !important; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -198,5 +198,59 @@ body {
     visibility: hidden;
     transform: translateY(-3rem); }
   .user-login__btn-container {
+    display: flex;
+    justify-content: space-between; }
+
+.user-signup {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center; }
+  .user-signup__container {
+    display: flex;
+    flex: 0.333;
+    justify-content: center;
+    padding: 2rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  .user-signup__input-container-sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; }
+  .user-signup__form {
+    display: flex;
+    flex-direction: column;
+    flex: 1; }
+  .user-signup__form-heading {
+    display: flex;
+    align-items: center;
+    font-size: 2rem; }
+  .user-signup__heading-primary {
+    color: black;
+    text-transform: uppercase; }
+  .user-signup__input-text {
+    font-family: inherit;
+    color: inherit;
+    display: block;
+    width: 60%;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    outline: none;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    border-bottom: solid 0.25rem transparent;
+    transition: all 0.2s; }
+  .user-signup__input-label {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    transition: all 0.2s; }
+  .user-signup__input-text:focus {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: solid 0.25rem #28b485; }
+  .user-signup__input-text:focus:invalid {
+    border-bottom: solid 0.25rem #ff7730; }
+  .user-signup__btn-container {
     display: flex;
     justify-content: space-between; }
