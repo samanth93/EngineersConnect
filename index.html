@@ -19,7 +19,7 @@
     <main>
       <section class="user-login">
         <div class="user-login__container">
-          <form class="user-login__form">
+          <form class="user-login__form" action="" method="post">
             <div class="user-login__logo-container u-margin-bottom-small">
               <!-- https://icomoon.io/app/#/select/image -->
               <svg class="user-login__logo">
@@ -35,11 +35,12 @@
             <div class="user-login__input-container">
               <div>
                 <input
-                  type="text"
+                  type="email"
                   class="user-login__input-text"
                   placeholder="User Name"
                   id="user_name"
                   autocomplete="off"
+                  required
                 />
                 <label for="user_name" class="user-login__input-label"
                   >User name</label
@@ -52,6 +53,8 @@
                   placeholder="Password"
                   id="password"
                   autocomplete="off"
+                  required
+                  minlength="6"
                 />
                 <label for="password" class="user-login__input-label"
                   >Password</label
@@ -59,7 +62,13 @@
               </div>
             </div>
             <div class="user-login__btn-container">
-              <button class="btn btn--light-green">Sign-in</button>
+              <!-- <button class="btn btn--light-green">Sign-in</button> -->
+              <input
+                class="btn btn--light-green"
+                type="submit"
+                id="login"
+                value="Sign-in"
+              />
               <button class="btn btn--light-orange redirect">Sign-up</button>
             </div>
           </form>

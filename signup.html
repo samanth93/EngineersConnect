@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Engineers Connect</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <main>
       <section class="user-signup">
         <div class="user-signup__container">
-          <form class="user-signup__form">
+          <form class="user-signup__form" action="" method="post">
             <div class="user-signup__form-heading u-margin-bottom-small">
               <h3 class="user-signup__heading-primary">Engineers - Connect</h3>
             </div>
@@ -31,6 +33,7 @@
                   class="user-signup__input-text u-margin-bottom-small"
                   id="first_name"
                   autocomplete="off"
+                  onkeypress="return /[a-z]/i.test(event.key)"
                   required
                 />
               </div>
@@ -43,6 +46,7 @@
                   class="user-signup__input-text u-margin-bottom-small"
                   id="last_name"
                   autocomplete="off"
+                  onkeypress="return /[a-z]/i.test(event.key)"
                   required
                 />
               </div>
@@ -90,6 +94,7 @@
                   name="gender"
                   id="gender"
                   class="user-signup__input-text u-margin-bottom-small"
+                  required
                 >
                   <option value="Male">Male</option>
                   <option value="Female">Female</option>
@@ -101,52 +106,37 @@
                 >
                 <select
                   name="expertise"
-                  id="expertise"
+                  id="expertise_id"
                   class="user-signup__input-text u-margin-bottom-medium"
+                  required
                 >
-                  <option value="Aerospace Engineering">
-                    Aerospace Engineering
-                  </option>
-                  <option value="Automobile Engineering">
-                    Automobile Engineering
-                  </option>
-                  <option value="Chemical Engineering">
-                    Chemical Engineering
-                  </option>
-                  <option value="Computer Engineering">
-                    Computer Engineering
-                  </option>
-                  <option value="Civil Engineering">Civil Engineering</option>
-                  <option value="Electrical Engineering">
-                    Electrical Engineering
-                  </option>
-                  <option value="Electronics Engineering">
-                    Electronics Engineering
-                  </option>
-                  <option value="Genetic Engineering">
-                    Genetic Engineering
-                  </option>
-                  <option value="Production Engineering">
-                    Production Engineering
-                  </option>
-                  <option value="Mechanical Engineering">
-                    Mechanical Engineering
-                  </option>
-                  <option value="Marine Engineering">Marine Engineering</option>
-                  <option value="Software Engineering">
-                    Software Engineering
-                  </option>
-                  <option value="Telecommunications Engineering">
-                    Telecommunications Engineering
-                  </option>
-                  <option value="Textile Engineering">
-                    Textile Engineering
-                  </option>
+                  <option value="1">Aerospace Engineering</option>
+                  <option value="2">Automobile Engineering</option>
+                  <option value="3">Chemical Engineering</option>
+                  <option value="4">Computer Engineering</option>
+                  <option value="5">Civil Engineering</option>
+                  <option value="6">Electrical Engineering</option>
+                  <option value="7">Electronics Engineering</option>
+                  <option value="8">Genetic Engineering</option>
+                  <option value="9">Production Engineering</option>
+                  <option value="10">Mechanical Engineering</option>
+                  <option value="11">Marine Engineering</option>
+                  <option value="12">Software Engineering</option>
+                  <option value="13">Telecommunications Engineering</option>
+                  <option value="14">Textile Engineering</option>
                 </select>
               </div>
             </div>
             <div class="user-signup__btn-container">
-              <button class="btn btn--light-green">Register</button>
+              <input
+                class="btn btn--light-green"
+                type="submit"
+                id="register"
+                value="Register"
+              />
+              <!-- <button class="btn btn--light-green" id="register">
+                Register
+              </button> -->
             </div>
           </form>
         </div>
