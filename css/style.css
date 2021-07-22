@@ -10,7 +10,7 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem; }
+  padding: 1rem; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -254,3 +254,27 @@ body {
   .user-signup__btn-container {
     display: flex;
     justify-content: space-between; }
+
+.home-page__header {
+  border: 1px solid black;
+  font-size: 2.5rem; }
+
+.home-page__body-wrapper {
+  display: flex;
+  height: 90vh; }
+
+.home-page__side-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 20%;
+  border: 1px solid black; }
+  .home-page__side-nav > * {
+    margin: 1rem; }
+
+.home-page__content {
+  flex: 1 1 80%;
+  border: 1px solid black; }
+
+.home-page__img-placeholder {
+  height: 15rem; }

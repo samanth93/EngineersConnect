@@ -1,0 +1,27 @@
+.home-page {
+  &__header {
+    border: 1px solid black;
+    font-size: 2.5rem;
+  }
+  &__body-wrapper {
+    display: flex;
+    height: 90vh;
+  }
+  &__side-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 20%;
+    border: 1px solid black;
+    & > * {
+      margin: 1rem;
+    }
+  }
+  &__content {
+    flex: 1 1 80%;
+    border: 1px solid black;
+  }
+  &__img-placeholder {
+    height: 15rem;
+  }
+}

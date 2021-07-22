@@ -38,4 +38,27 @@ $(document).ready(function () {
       },
     });
   });
+  $(".user-login__form").submit(function (e) {
+    e.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "http://localhost:8000/login",
+      data: {
+        email: $("#user_name").val(),
+        password: $("#password").val(),
+      },
+      success: function (data, status, jqXHR) {
+        if (data) {
+          window.location = "http://127.0.0.1:5500/homePage.html";
+          // location.reload();
+        } else {
+          alert("Somethong went wrong");
+        }
+      },
+      error: function (xhr, status, errorThrown) {
+        const errorXHR = xhr;
+        console.log(errorXHR);
+      },
+    });
+  });
 });
